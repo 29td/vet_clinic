@@ -2,9 +2,11 @@
 
 CREATE TABLE animals (
     id INTEGER PRIMARY KEY NOT NULL,
-    name varchar(50),
+    name VARCHAR(100),
     date_of_birth DATE,
     escape_attempts INTEGER,
     neutered BOOLEAN,
     weight_kg DECIMAL
 );
+
+ALTER TABLE animals ADD species VARCHAR(100);
