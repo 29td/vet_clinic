@@ -10,7 +10,7 @@ SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
 
 BEGIN;
-UPDATE animals SET species = 'unspecified';
+update animals set species = 'unspecified';
 ROLLBACK;
 SELECT * FROM animals;
 BEGIN;
